@@ -8,7 +8,8 @@ function App() {
     const [HMScore, HMScoreSet] = useState(0);
     const [AWYScore, AWYScoreSet] = useState(0);
 
-    return ( < div className = "container" >
+    return ( <
+        div className = "container" >
         <
         section className = "scoreboard" >
         <
@@ -21,42 +22,41 @@ function App() {
         { /* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */ }
 
         <
-        div className = "home__score" > { HMScore } < /div>  < /
-        div > <
-        div className = "timer" > 00: 03 < /div>  <
+        div className = "home__score" > { HMScore } < /div>  <
+        /div > <div className = "timer"> 00: 03 </div >
+        <
         div className = "away" >
         <
-        h2 className = "away__name" > Tigers < /h2> <
-        div className = "away__score" > { AWYScore } < /div>  < /
-        div > < /div > <
-        BottomRow / >>
+        h2 className = "away__name" > Tigers < /h2>  <
+        div className = "away__score" > { AWYScore } < /div>   <
+        /div>  <
+        /div >  <
+        BottomRow / >
         <
-        /section>  <
+        /section>   <
         section className = "buttons" >
         <
         div className = "homeButtons" > { /* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */ } <
         button onClick = {
             () => HMScoreSet(HMScore + 7)
         }
-        className = "homeButtons__touchdown" > Home Touchdown < /button>  <
+        className = "homeButtons__touchdown" > Home Touchdown < /button>   <
         button onClick = {
-            () => HMScoreSet(HMScore + 3)
-        }
-        className = "homeButtons__fieldGoal" > Home Field Goal < /button>  < /
-        div > <
+            () => HMScoreSet(HMScore + 3) }
+        className = "homeButtons__fieldGoal" > Home Field Goal < /button>  <
+        /div>  <
         div className = "awayButtons" >
         <
         button onClick = {
-            () => AWYScoreSet(AWYScore + 7)
-        }
-        className = "awayButtons__touchdown" > Away Touchdown < /button>  <
+            () => AWYScoreSet(AWYScore + 7) }
+        className = "awayButtons__touchdown" > Away Touchdown < /button>   <
         button onClick = {
             () => AWYScoreSet(AWYScore + 3)
         }
-        className = "awayButtons__fieldGoal" > Away Field Goal < /button>  < /
-        div > <
-        /section> < /
-        div >
+        className = "awayButtons__fieldGoal" > Away Field Goal < /button>   <
+        /div >  <
+        /section>  <
+        /div>
     );
 }
 
