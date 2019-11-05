@@ -34,11 +34,18 @@
 }
 
 .home {
-    background-color: #656565;
+    background-color: #f80606;
 }
 
 .away {
-    background-color: #af750a;
+    background-color: #728286;
+}
+
+.bottomRow__Digital {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
 }
 
 .home__name,
@@ -49,7 +56,7 @@
 .quarter__title {
     text-transform: uppercase;
     font-size: 3rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .home__score,
@@ -86,8 +93,9 @@
 .quarter {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     place-items: center;
+    align-content: center;
 }
 
 .down__value,
@@ -96,7 +104,7 @@
 .quarter__value {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     place-items: center;
     font-family: "Ozone";
     font-size: 5rem;
@@ -125,6 +133,39 @@
     border-radius: 4px;
 }
 
-.SetDown {
-    margin: 2%;
+.down__set,
+.toGo__set,
+.ballOn__Set,
+.quarter__set {
+    margin: 1rem;
+    border-radius: 4px;
+}
+
+.bottomRow__buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 1.6rem;
+    border: 1px solid white;
+}
+
+.bottomRowbtns__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.btbholders {
+    display: flex;
+    justify-content: space-around;
+}
+
+.downbtn_title,
+.toGobtn_title,
+.ballonBtn_title,
+.qtrbtn_title {
+    text-align: center;
 }
